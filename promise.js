@@ -56,8 +56,6 @@ class myPromise{
                     }
                 })
             })
-            this.successList.push(onSuccess)
-            this.rejectList.push(onReject)
         }
         if(this.status === "FULFILLED"){
             return promise2 = new myPromise((resolve,reject)=>{
